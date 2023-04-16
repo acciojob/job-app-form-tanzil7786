@@ -13,24 +13,25 @@
 	<form method="post">
 		<h4>Job App Form</h4>
 		<div class="name">
-			<label for="name">Name</label>
+			<label for="name">Name*</label>
 			<input type="text" name="name" id ="name" required>
 		</div>
 		<br>
 		<div class="email">
-			<label for="email">Email</label>
+			<label for="email">Email*</label>
 			<input type="email" name="email" id="email" required>
 		</div>
 		<br>
 		<div class="gender">
-			<label for="gender" required>Gender</label><br>
-			Male<input type="radio" name="male">
-			Female<input type="radio" name="female">
+			<label for="gender">Gender*</label><br>
+			Male<input type="radio" name="male" value="male" required>
+			Female<input type="radio" name="female" value="female" required>
 		</div>
 		<br>
 		<div class="laptop">
 			<label for="laptop">Laptop Brands</label><br>
-			<select name="brand" name="laptop">
+			<select id="brand" name="laptop" required>
+				<option value="" selected disabled>
 				<option value="apple">Apple</option>
 				<option value="asus">Asus</option>
 				<option value="HP">HP</option>
@@ -38,30 +39,28 @@
 		</div>
 		<br>
 		<div class="age">
-			<label for="age">Age</label>
+			<label for="age">Age*</label>
 			<input type="number" name="age" id="age" required>
 		</div>
 		<br>
 		<div class="dob">
-			<label for="dob">Date of birth</label>
+			<label for="dob">DOB*</label>
 			<input type="date" name="dob" id="dob" required>
 		</div>
 		<br>
 		<div class="password">
-			<label for="password">Password</label>
+			<label for="password">Password*</label>
 			<input type="password" name="password" id="password" required>
 		</div>
 		<br>
-		<div>
-			<label for="portfolio">Portfolio</label>
+		<div class="portfolio">
+			<label for="portfolio">Portfolio Link</label>
 			<input type="url" name="portfolio" id="portfolio">
 		</div>
 		<br>
 		<div class="submit">
-			<label for="submit"></label>
-			<input type="submit">
-			<label for="reset"></label>
-			<input type="reset">
+			<button type="submit">Submit</button>
+			
 		</div>
 	</form>
 
